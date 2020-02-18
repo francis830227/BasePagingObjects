@@ -20,6 +20,7 @@
 		151560C823F81FC700193F80 /* DemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151560C723F81FC700193F80 /* DemoCollectionViewCell.swift */; };
 		151560CA23F8261100193F80 /* PanTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151560C923F8261000193F80 /* PanTransitioningDelegate.swift */; };
 		151560CC23F8308700193F80 /* NeedPanTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151560CB23F8308700193F80 /* NeedPanTransitioningDelegate.swift */; };
+		151560D423FA90D900193F80 /* BaseViewController + UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151560D323FA90D900193F80 /* BaseViewController + UICollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		151560C723F81FC700193F80 /* DemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewCell.swift; sourceTree = "<group>"; };
 		151560C923F8261000193F80 /* PanTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanTransitioningDelegate.swift; sourceTree = "<group>"; };
 		151560CB23F8308700193F80 /* NeedPanTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedPanTransitioningDelegate.swift; sourceTree = "<group>"; };
+		151560D323FA90D900193F80 /* BaseViewController + UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewController + UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				151560B923F6340100193F80 /* BaseViewController.swift */,
+				151560D323FA90D900193F80 /* BaseViewController + UICollectionViewDelegate.swift */,
 				151560BB23F636B600193F80 /* RightViewController.swift */,
 			);
 			path = Controllers;
@@ -214,6 +217,7 @@
 				151560A623F6337B00193F80 /* AppDelegate.swift in Sources */,
 				151560BC23F636B600193F80 /* RightViewController.swift in Sources */,
 				151560A823F6337B00193F80 /* SceneDelegate.swift in Sources */,
+				151560D423FA90D900193F80 /* BaseViewController + UICollectionViewDelegate.swift in Sources */,
 				151560BA23F6340100193F80 /* BaseViewController.swift in Sources */,
 				151560CC23F8308700193F80 /* NeedPanTransitioningDelegate.swift in Sources */,
 				151560CA23F8261100193F80 /* PanTransitioningDelegate.swift in Sources */,

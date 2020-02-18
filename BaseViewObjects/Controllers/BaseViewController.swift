@@ -44,37 +44,10 @@ class BaseViewController: UIViewController, NeedPanTransitioningDelegate {
         collectionView.dataSource = self
         collectionView.isPagingEnabled = true
         collectionView.register(DemoCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.contentInsetAdjustmentBehavior = .never
         view.addSubview(collectionView)
     }
 
 }
 
-extension BaseViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? DemoCollectionViewCell else { return UICollectionViewCell() }
-        
-        cell.label.text = "\(indexPath.row)"
-        
-        return cell
-    }
-    
-}
 
-extension BaseViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return view.frame.size
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
-    }
-    
-}
